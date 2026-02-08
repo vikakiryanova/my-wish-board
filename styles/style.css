@@ -1,0 +1,52 @@
+html {
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+header {
+    background: #721515;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 40px;
+    margin: 0 300px;
+    padding: 1px 0;
+    font-size: 20px;
+}
+
+body {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+img {
+    max-width: 700px;
+    max-height: 600px;
+    height: auto;
+    border: 6px solid #721515;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    border-radius: 20px;
+    background: #721515;
+    margin: 30px;
+}
+
+button {
+    background: #721515;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 7px;
+    font-family: "SN Pro", sans-serif;
+    display: block;
+    margin: 0 auto;
+}
