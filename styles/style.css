@@ -7,14 +7,71 @@ html {
   
 }
 
-header {
+.fixed-header {
+    position: fixed;
+    width: 100%; 
     background: #721515;
     color: whitesmoke;
     text-align: center;
     border-radius: 40px;
-    margin: 0 300px;
-    padding: 1px 0;
-    font-size: 20px;
+    z-index: 1000;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.header-title {
+    font-size: 30px;
+    padding: auto;
+    margin: auto; 
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+    z-index: 1001;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 67px;
+    left: 28px;
+    border-radius: 15px;
+    min-width: 200px;
+    z-index: 999;
+    padding: 10px 0;
+    background: rgb(228, 222, 222);
+    
+}
+
+.menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    padding: 0 10px;
+
+}
+
+.menu a:hover {
+    background: #f5f5f5;
+}
+
+.menu.show {
+    display: block;
+}
+
+.content {
+    margin-top: 70px;
 }
 
 body {
@@ -23,7 +80,7 @@ body {
 }
 
 img {
-    max-width: 700px;
+    max-width: auto;
     max-height: 600px;
     height: auto;
     border: 6px solid #721515;
@@ -43,10 +100,28 @@ hr {
 button {
     background: #721515;
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 15px;
     padding: 7px;
     font-family: "SN Pro", sans-serif;
     display: block;
     margin: 0 auto;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.social img {
+    display: inline-block;
+    margin: 0;
+    width: auto; 
+    height: 370px;    
+}
+
+#career img {
+    width: auto; 
+    height: 400px;
 }
