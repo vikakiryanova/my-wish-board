@@ -8,14 +8,14 @@ html {
 }
 
 .fixed-header {
-    position: fixed;
+    position: sticky;
     width: 100%; 
     background: #721515;
     color: whitesmoke;
     text-align: center;
     border-radius: 40px;
     z-index: 1000;
-    top: 5px;
+    top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,31 +70,52 @@ html {
     display: block;
 }
 
-.content {
-    margin-top: 70px;
+/* .content {
+    position: relative;
 }
+
+
+.content::before,
+.content::after{
+    content: "✦ ✦ ✦";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    font-size: 22px;
+    color: #721515;
+    opacity: 0.2;
+    letter-spacing: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+    pointer-events: none;
+} */
 
 body {
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+p {
+    text-align: center;
+    font-size: 22px;
 }
 
 img {
     max-width: auto;
-    max-height: 600px;
+    max-height: 500px;
     height: auto;
-    border: 6px solid #721515;
-    border-radius: 10px;
+    border-radius: 15px;
     display: block;
     margin: 0 auto;
 }
 
 hr {
-    height: 2px;
     border: none;
-    border-radius: 20px;
-    background: #721515;
-    margin: 30px;
+    border-radius: 50px; 
+    margin: 30px 2%;
+    border-bottom: 3px solid #721515;
 }
 
 button {
@@ -106,12 +127,15 @@ button {
     font-family: "SN Pro", sans-serif;
     display: block;
     margin: 0 auto;
+    border: none;
 }
 
 .social {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
+    justify-content: center;
+
 }
 
 .social img {
