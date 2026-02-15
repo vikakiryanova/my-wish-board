@@ -42,7 +42,7 @@ html {
 .menu {
     display: none;
     position: fixed;
-    top: 67px;
+    top: 70px;
     left: 28px;
     border-radius: 15px;
     min-width: 200px;
@@ -95,6 +95,7 @@ html {
 body {
     padding: 0 20px;
     font-size: 22px;
+    
 }
 
 p {
