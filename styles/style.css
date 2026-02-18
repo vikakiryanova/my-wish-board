@@ -70,28 +70,6 @@ html {
     display: block;
 }
 
-/* .content {
-    position: relative;
-}
-
-
-.content::before,
-.content::after{
-    content: "✦ ✦ ✦";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 60px;
-    font-size: 22px;
-    color: #721515;
-    opacity: 0.2;
-    letter-spacing: 12px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    white-space: nowrap;
-    pointer-events: none;
-} */
-
 body {
     padding: 0 20px;
     font-size: 22px;
@@ -104,7 +82,7 @@ p {
 }
 
 img {
-    max-width: auto;
+    max-width: 100%;
     max-height: 500px;
     height: auto;
     border-radius: 15px;
@@ -142,6 +120,7 @@ button {
 .social img {
     display: inline-block;
     margin: 0;
+    max-width: 100%;
     width: auto; 
     height: 370px;    
 }
@@ -150,3 +129,4 @@ button {
     width: auto; 
     height: 400px;
 }
+
